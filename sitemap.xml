@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+                 <url><loc>http://teroject.com</loc></url>
+<url><loc>http://teroject.com/panel/signinup</loc></url>
+<url><loc>http://teroject.com/</loc></url>
+<url><loc>http://teroject.com/dashboard</loc></url>
+<url><loc>http://teroject.com/team_create</loc></url>
+<url><loc>http://teroject.com/team_list</loc></url>
+<url><loc>http://teroject.com/ticket_create</loc></url>
+<url><loc>http://teroject.com/ticket_list</loc></url>
+<url><loc>http://teroject.com/members</loc></url>
+<url><loc>http://teroject.com/profile_edit</loc></url>
+<url><loc>http://teroject.com/logout</loc></url>
+</urlset>
