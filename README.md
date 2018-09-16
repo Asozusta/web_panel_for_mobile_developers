@@ -1,5 +1,5 @@
 # Web panel for android developers
-Server &amp; Web Client side of an android application . you can manage posts and users and use api to get them
+Server &amp; Client side of an android application . you can manage posts and users and use api to get them
 
 # Info 
 - Code Language : PURE PHP 
@@ -16,3 +16,6 @@ Server &amp; Web Client side of an android application . you can manage posts an
 - Open **app/config.php** file and change your localhost address and database infos 
 - Run your project in browser ( localhost:port/yourfolder )
 - Login with **username** : **admin** and **password** : **android**
+
+# API
+soon
