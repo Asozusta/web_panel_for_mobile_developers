@@ -8,7 +8,7 @@ Server &amp; Web Client side of an android application . you can manage posts an
 
 # How to use it :
 - Clone or download project
-- Install xampp or somethings like that [http://p30download.com/fa/entry/37583](( Xampp Download Link ))
+- Install xampp or somethings like that [http://p30download.com/fa/entry/37583]( Xampp Download Link )
 - Copy files in your project folder in localhost
 - Run localhost and phpmyadmin ( mysql )
 - Create database with name ( weband ) and enter it
