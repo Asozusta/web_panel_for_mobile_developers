@@ -1,0 +1,10 @@
+Options +FollowSymLinks -MultiViews
+# Turn mod_rewrite on
+RewriteEngine On
+RewriteBase /
+
+## To internally redirect /dir/foo to /dir/foo.php
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [L]
+
+ErrorDocument 404 "<center><h2 style='margin-top:200px;'>FaridFr.ir | 09364961262</h2></center>"
