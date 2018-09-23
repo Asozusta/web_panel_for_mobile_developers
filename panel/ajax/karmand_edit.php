@@ -7,7 +7,7 @@ die("<center><h2 style='margin-top:200px;'>Security Team</h2></center>");
 $data 			    = array();
 $errors         = array();
 
-if(clear($_POST['form'])=='karmand_edit'){
+if(clear($_POST['form'])=='user_edit'){
 
   $pdo = Database::connect();
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

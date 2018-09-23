@@ -13,7 +13,7 @@
                         </li>
 
                         <li class="nav-item start ">
-                            <a href="karmand_list" class="nav-link nav-toggle">
+                            <a href="user_list" class="nav-link nav-toggle">
                                 <i class="fa fa-users"></i>
                                 <span class="title">لیست مدیران</span>
                                 <span class="arrow"></span>

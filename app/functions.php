@@ -164,7 +164,7 @@ function get_posts_with_authors ()
 
 
 
-function date_diff_persion ($date){
+function date_diff_persian ($date){
 
 	   $date11 = explode(' ',$date);
 	   $date11 = date_create($date11[0]);

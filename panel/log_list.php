@@ -49,7 +49,7 @@ $logs = get_logs();
                                                     <td>
                                                     <?=$log['username']?>
                                                     </td>
-                                                    <td>  <?=date_diff_persion($date)?></td>
+                                                    <td>  <?=date_diff_persian($date)?></td>
                                                     <td>  <?=$log['page']?></td>
                                                     <td>  <?=$log['ip']?></td>
                                                 </tr>

@@ -68,7 +68,7 @@ $logs = get_loginout();
                                                     <td>
                                                     <label class="label label-<?=$color_login?>"><?=$message_login?></label>
                                                     </td>
-                                                    <td>  <?=date_diff_persion($log['time'])?></td>
+                                                    <td>  <?=date_diff_persian($log['time'])?></td>
                                                     <td>  <?=$log['comment']?></td>
                                                     <td>  <?=$log['ip']?></td>
                                                 </tr>

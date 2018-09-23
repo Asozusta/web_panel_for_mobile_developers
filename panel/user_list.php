@@ -17,7 +17,7 @@ $karmands = get_admins();
                                     <div class="caption">
                                         لیست مدیر ها <div class="btn-group btn-group-devided">
                                            
-                                               <a href="karmand_create" class="btn btn-xs btn-outline green-meadow">ایجاد مدیر جدید</a>
+                                               <a href="user_create" class="btn btn-xs btn-outline green-meadow">ایجاد مدیر جدید</a>
                                        
                                         </div>
                                     </div>
@@ -88,8 +88,8 @@ $karmands = get_admins();
                                                     }
                                                     ?></td>
                                                     <td>
-                                                        <a href='karmand_edit?id=<?=$karmand['id']?>' class="label label-sm label-success"> ویرایش </a>
-                                                        <a onclick="return confirm('آیا مطمین هستید?')" href='karmand_delete?id=<?=$karmand['id']?>' class="label label-sm label-danger"> حذف </a>
+                                                        <a href='user_edit?id=<?=$karmand['id']?>' class="label label-sm label-success"> ویرایش </a>
+                                                        <a onclick="return confirm('آیا مطمین هستید?')" href='user_delete?id=<?=$karmand['id']?>' class="label label-sm label-danger"> حذف </a>
                                                     </td>
                                                 </tr>
 

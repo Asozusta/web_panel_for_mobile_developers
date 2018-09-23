@@ -1,17 +1,17 @@
 
-function karmand_edit(){
+function user_edit(){
 
-    $('#karmand_edit div.alert-success').remove(); 
-    $('#karmand_edit div.alert-warning').remove(); 
+    $('#user_edit div.alert-success').remove(); 
+    $('#user_edit div.alert-warning').remove(); 
     $find = $('#username,#pass1,#pass2,#lname,#fname,#email,#mobile').parent();
     $find.removeClass('has-error'); 
-    $('#karmand_edit span.help-block').remove(); 
-    $('#karmand_edit input').attr('disabled','true');
+    $('#user_edit span.help-block').remove(); 
+    $('#user_edit input').attr('disabled','true');
 
     $('#loading').show().css('display','inline-block');
 
     var formData = {
-        'form'               : 'karmand_edit',
+        'form'               : 'user_edit',
         'username'           : $('#username').val(),
         'pass1'              : $('#pass1').val(),
         'pass2'              : $('#pass2').val(),
@@ -25,12 +25,12 @@ function karmand_edit(){
     };
 
     
-    $.post('ajax/karmand_edit.php',formData,function(data){
+    $.post('ajax/user_edit.php',formData,function(data){
 
     })
     .done(function(data){
 
-        $('#karmand_edit input').removeAttr('disabled');
+        $('#user_edit input').removeAttr('disabled');
         $('#loading').hide();
 
         if ( !data.success) {
@@ -91,24 +91,24 @@ function karmand_edit(){
         else {
 
             toastr['success'](data.message);
-            window.location.replace("karmand_list");
+            window.location.replace("user_list");
         } 
         })
 
     .fail(function() {
 
-        $('#karmand_edit div.alert-warning').remove(); 
-        $('form[id="karmand_edit"').append('<div class="alert alert-warning">' + 'مشکلی در برقراری ارتباط پیش آمده است , بعدا امتحان کنید' + '</div>');
+        $('#user_edit div.alert-warning').remove(); 
+        $('form[id="user_edit"').append('<div class="alert alert-warning">' + 'مشکلی در برقراری ارتباط پیش آمده است , بعدا امتحان کنید' + '</div>');
 
     })
 
 }
 
 
-function username_check_karmand_create(){
+function username_check_user_create(){
 
         
-    $('#karmand_create #username').attr('disabled','true');
+    $('#user_create #username').attr('disabled','true');
     $('#loading_username').show().css('display','inline-block');
     $find = $('#username').parent();
     $find.removeClass('has-error');
@@ -119,12 +119,12 @@ function username_check_karmand_create(){
             'username'           : $('#username').val() 
         };
 
-    $.post('ajax/username_check_karmand_create.php',data,function(data){
+    $.post('ajax/username_check_user_create.php',data,function(data){
 
     })
 
     .done(function(data){
-        $('#karmand_create #username').removeAttr('disabled');
+        $('#user_create #username').removeAttr('disabled');
         $('#loading_username').hide();
         $find = $('#username').parent();
         $find.removeClass('has-error');
@@ -152,10 +152,10 @@ function username_check_karmand_create(){
     })
 }
 
-function username_check_karmand_edit(){
+function username_check_user_edit(){
 
         
-    $('#karmand_edit #username').attr('disabled','true');
+    $('#user_edit #username').attr('disabled','true');
     $('#loading_username').show().css('display','inline-block');
     $find = $('#username').parent();
     $find.removeClass('has-error');
@@ -166,12 +166,12 @@ function username_check_karmand_edit(){
             'username'           : $('#username').val() 
         };
 
-    $.post('ajax/username_check_karmand_edit.php',data,function(data){
+    $.post('ajax/username_check_user_edit.php',data,function(data){
 
     })
 
     .done(function(data){
-        $('#karmand_edit #username').removeAttr('disabled');
+        $('#user_edit #username').removeAttr('disabled');
         $('#loading_username').hide();
         $find = $('#username').parent();
         $find.removeClass('has-error');
@@ -198,19 +198,19 @@ function username_check_karmand_edit(){
 }
 
 
-function karmand_create(){
+function user_create(){
 
-    $('#karmand_create div.alert-success').remove(); 
-    $('#karmand_create div.alert-warning').remove(); 
+    $('#user_create div.alert-success').remove(); 
+    $('#user_create div.alert-warning').remove(); 
     $find = $('#username,#pass1,#pass2,#lname,#fname,#email,#mobile').parent();
     $find.removeClass('has-error'); 
-    $('#karmand_create span.help-block').remove(); 
-    $('#karmand_create input').attr('disabled','true');
+    $('#user_create span.help-block').remove(); 
+    $('#user_create input').attr('disabled','true');
 
     $('#loading').show().css('display','inline-block');
 
     var formData = {
-        'form'               : 'karmand_create',
+        'form'               : 'user_create',
         'username'           : $('#username').val(),
         'pass1'              : $('#pass1').val(),
         'pass2'              : $('#pass2').val(),
@@ -224,12 +224,12 @@ function karmand_create(){
     };
 
     
-    $.post('ajax/karmand_create.php',formData,function(data){
+    $.post('ajax/user_create.php',formData,function(data){
 
     })
     .done(function(data){
 
-        $('#karmand_create input').removeAttr('disabled');
+        $('#user_create input').removeAttr('disabled');
         $('#loading').hide();
 
         if ( !data.success) {
@@ -289,15 +289,15 @@ function karmand_create(){
         }
         else {
 
-            $('#karmand_create div.alert-success').remove(); 
-            window.location.replace("karmand_list");
+            $('#user_create div.alert-success').remove(); 
+            window.location.replace("user_list");
         } 
         })
 
     .fail(function() {
 
-        $('#karmand_create div.alert-warning').remove(); 
-        $('form[id="karmand_create"').append('<div class="alert alert-warning">' + 'مشکلی در برقراری ارتباط پیش آمده است , بعدا امتحان کنید' + '</div>');
+        $('#user_create div.alert-warning').remove(); 
+        $('form[id="user_create"').append('<div class="alert alert-warning">' + 'مشکلی در برقراری ارتباط پیش آمده است , بعدا امتحان کنید' + '</div>');
 
     })
 

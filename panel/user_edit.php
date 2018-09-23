@@ -3,7 +3,7 @@ require("../app/config.php");
 auth ('foruser',basename(__FILE__,".php"));
 
 if (!isset($_GET['id'])) {
-  header('Location: karmand_list');
+  header('Location: user_list');
 }else{
   $sql = "SELECT id FROM users WHERE id = ?";
   $query= $pdo->prepare($sql);
@@ -41,7 +41,7 @@ $result = $query->fetch(PDO::FETCH_ASSOC);
                                      <div class="actions">
                                         <div class="btn-group btn-group-devided">
                                            
-                                               <a href="karmand_list" class="btn btn-outline green-meadow">لیست مدیران</a>
+                                               <a href="user_list" class="btn btn-outline green-meadow">لیست مدیران</a>
                                          
                                         </div>
                                     </div>
@@ -52,13 +52,13 @@ $result = $query->fetch(PDO::FETCH_ASSOC);
 
 
 
-      <form method="POST" id="karmand_edit" onsubmit="event.preventDefault(); karmand_edit()">
+      <form method="POST" id="user_edit" onsubmit="event.preventDefault(); user_edit()">
 
 
         <div class="row">
           <div class="col-sm-3">
             <div id="username-div" class="form-group form-md-line-input form-md-floating-label">
-              <input class="form-control input-sm" id="username" name="username" value="<?=$result['username']?>" autocomplete="off"  onblur="username_check_karmand_edit();">
+              <input class="form-control input-sm" id="username" name="username" value="<?=$result['username']?>" autocomplete="off"  onblur="username_check_user_edit();">
               <label for="username">نام مدیر</label>
             </div>
             <div id="loading_username" style="display:none;"> <img src="<?php echo ASSETS; ?>/img/loading.gif" width="15" /> در حال انجام ... </div>

@@ -58,7 +58,7 @@ $posts = get_posts();
                                                         echo '<i style="margin-left:5px;" class="fa fa-file-text-o"></i>';
                                                     ?>
                                                     <img src="../upload/thumbnails/<?=$th?>.jpg"  style="margin-right:0px; margin-left:10px; margin-top:0px;" width="15" class="img-circle">
-                                                    <b><?=$post['title']?></b><span class='pull-right' style='font-weight:300;'><?=date_diff_persion($date)?></span></div>
+                                                    <b><?=$post['title']?></b><span class='pull-right' style='font-weight:300;'><?=date_diff_persian($date)?></span></div>
                                                 </li>
 
                                                 <?php } ?>

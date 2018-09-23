@@ -91,7 +91,7 @@ $posts = get_posts_with_authors();
                                                     <td style="font-weight:bold;"><?=$post['title']?></td>
                                                     <td> <?=substr($post['text'],0,50)?> ...</td>
                                                     <td><?=$post['fname']?> <?=$post['lname']?></td>
-                                                    <td><?=date_diff_persion($date)?></td>
+                                                    <td><?=date_diff_persian($date)?></td>
                                                     <td>
                                                         <a href='posts_edit?id=<?=$post['id']?>' class="label label-sm label-success"> ویرایش </a>
                                                         <a onclick="return confirm('آیا مطمین هستید?')" href='posts_delete?id=<?=$post['id']?>' class="label label-sm label-danger"> حذف </a>

@@ -6,7 +6,7 @@ require "..".THEME."header.php";
 ?>
 <div class="row">
 
-  <form method="POST" id="karmand_create" onsubmit="event.preventDefault(); karmand_create()">
+  <form method="POST" id="user_create" onsubmit="event.preventDefault(); user_create()">
 
    <div class="col-md-6">
     <div class="portlet light">
@@ -19,7 +19,7 @@ require "..".THEME."header.php";
        <div class="actions">
         <div class="btn-group btn-group-devided">
 
-         <a href="karmand_list" class="btn green-meadow">لیست مدیران</a>
+         <a href="user_list" class="btn green-meadow">لیست مدیران</a>
 
        </div>
      </div>

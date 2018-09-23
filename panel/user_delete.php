@@ -2,7 +2,7 @@
 require("../app/config.php");
 
 if (!isset($_GET['id'])) {
-	header('Location: karmand_list');
+	header('Location: user_list');
 }else{
 
 	$sql = "SELECT * FROM users WHERE id = ?";
@@ -14,7 +14,7 @@ if (!isset($_GET['id'])) {
 		$sql_delete = "DELETE FROM users WHERE id = ?";
 		$query= $pdo->prepare($sql_delete);
 		$query->execute(array($_GET['id']));
-		header('location: karmand_list');
+		header('location: user_list');
 	}else{
 		die("<center><h2 style='margin-top:200px;'>Security Team</h2></center>");
 	}
