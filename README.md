@@ -18,8 +18,8 @@ Server &amp; Client side of an android application . you can manage posts and us
 - Login with **username** : **admin** and **password** : **android**
 
 # API
-- your api address is : Localhost/YourProjectName/api/android.php
-- first post a key-value with key : `api_function` and say what do you want from api ?
+- your api address is : Localhost/YourProjectName**/api/android.php**
+- first post a key-value with key : **`api_function`** and say what do you want from api ?
 - available api functions : 
 
 | Function name | Description |
@@ -29,6 +29,6 @@ Server &amp; Client side of an android application . you can manage posts and us
 | post_number | get all posts number , you can send `type` for specialize |
 
 - type are : `text` or `video`
-- your files addresses : localhost/YourProjectName/upload/files/ADDRESS
+- your files addresses : localhost/YourProjectName**/upload/files/ADDRESS**
 
 i hope you enjoy :)
