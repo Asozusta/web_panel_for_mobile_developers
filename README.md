@@ -18,7 +18,8 @@ Think you want to create an application for blogging or advertisment or show pic
 - Import **database.sql** to your database
 - Open **app/config.php** file and change your localhost address and database infos 
 - Run your project in browser ( localhost:port/yourfolder )
-- Login with **username** : **admin** and **password** : **android**
+- Login with **username** : **admin** and **password** : **admin**
+- Use api to get data in your application
 
 # API
 - your api address is : Localhost/YourProjectName/api/android.php
