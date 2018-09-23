@@ -1,5 +1,5 @@
-# Web panel for android developers
-Server &amp; Client side of an android application . you can manage posts and users and use api to get them
+# Web panel for mobile developers
+Server &amp; Client side of an mobile application . you can manage posts and users and use api to get them
 
 # Usefulness
 Think you want to create an application for blogging or advertisment or show picture and videos . ( resume , news or ... ) . You should write server side . should'nt you ? So , it is useful for you . Download it , config it , upload it on your host ( even free ) and use api of it
