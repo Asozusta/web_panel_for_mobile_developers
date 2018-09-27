@@ -8,6 +8,18 @@ Think you want to create an application for blogging or advertisment or show pic
 - Code Language : PURE PHP 
 - Theme Language : Persian ( فارسی )
 
+# Demo
+You can see some images from project here :
+
+Dashboard Panel :
+![dashboard][http://s8.picofile.com/file/8338412318/dashboard.png]
+
+Posts pages :
+![post_page][http://s9.picofile.com/file/8338412392/posts.png]
+
+User management :
+![user][http://s9.picofile.com/file/8338412400/users.png]
+
 
 # How to use it :
 - Clone or download project
