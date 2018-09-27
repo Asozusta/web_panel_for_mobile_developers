@@ -22,7 +22,7 @@ Think you want to create an application for blogging or advertisment or show pic
 - Use api to get data in your application
 
 # API
-- your api address is : Localhost/YourProjectName/api/android.php
+- your api address is : Localhost/YourProjectName/api/api.php
 - first post a key-value with key : `api_function` and say what do you want from api ?
 - available api functions : 
 
