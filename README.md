@@ -16,7 +16,8 @@ Think you want to create an application for blogging or advertisment or show pic
 - Run localhost and phpmyadmin ( mysql )
 - Create database with name ( weband ) and enter it
 - Import **database.sql** to your database
-- Open **app/config.php** file and change your localhost address and database infos 
+- Open **app/config.php** file and change your localhost address and database info
+- Change `FOLDER_NAME` , `PORT_NUMBER` ( Usually 80 ) , `DATABASE_NAME` , `DATABASE_USERNAME` , `DATABASE_PASSWORD` , `DATABASE_HOST`
 - Run your project in browser ( localhost:port/yourfolder )
 - Login with **username** : **admin** and **password** : **admin**
 - Use api to get data in your application
