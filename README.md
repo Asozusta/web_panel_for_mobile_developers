@@ -17,7 +17,9 @@ Think you want to create an application for blogging or advertisment or show pic
 - Create database with name ( weband ) and enter it
 - Import **database.sql** to your database
 - Open **app/config.php** file and change your localhost address and database info
-- Change `FOLDER_NAME` , `PORT_NUMBER` ( Usually 80 ) , `DATABASE_NAME` , `DATABASE_USERNAME` , `DATABASE_PASSWORD` , `DATABASE_HOST`
+   - `FOLDER_NAME` : Your project folder name in xampp/htdocs
+   - `PORT_NUMBER` : Usually 80 as default , but maybe busy and need to change 
+   - `DATABASE_NAME` , `DATABASE_USERNAME` , `DATABASE_PASSWORD` , `DATABASE_HOST` due to the phpmyadmin
 - Run your project in browser ( localhost:port/yourfolder )
 - Login with **username** : **admin** and **password** : **admin**
 - Use api to get data in your application
