@@ -1,5 +1,8 @@
-# Web panel for android developers
-Server &amp; Client side of an android application . you can manage posts and users and use api to get them
+# Web panel for mobile developers
+Server &amp; Client side of an mobile application . you can manage posts and users and use api to get them
+
+# Usefulness
+Think you want to create an application for blogging or advertisment or show picture and videos . ( resume , news or ... ) . You should write server side . should'nt you ? So , it is useful for you . Download it , config it , upload it on your host ( even free ) and use api of it
 
 # Info 
 - Code Language : PURE PHP 
@@ -15,10 +18,11 @@ Server &amp; Client side of an android application . you can manage posts and us
 - Import **database.sql** to your database
 - Open **app/config.php** file and change your localhost address and database infos 
 - Run your project in browser ( localhost:port/yourfolder )
-- Login with **username** : **admin** and **password** : **android**
+- Login with **username** : **admin** and **password** : **admin**
+- Use api to get data in your application
 
 # API
-- your api address is : Localhost/YourProjectName/api/android.php
+- your api address is : Localhost/YourProjectName/api/api.php
 - first post a key-value with key : `api_function` and say what do you want from api ?
 - available api functions : 
 
