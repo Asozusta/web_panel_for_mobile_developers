@@ -1,18 +1,37 @@
 <?php
+
+// if you are in test mode set it 1 , and if you want to upload on server set 0
 $test=1;
 
 if($test) {
-define('ADMIN_MOBILE','#');
-define('SITE_URL', 'http://localhost:81/weband');
-define('THEME','/app/theme/version1/');
-define('ASSETS','/artak/app/theme/version1/');
+
+  // change this variables due to the localhost port and phpmyadmin info
+  define('ADMIN_MOBILE','#');
+  define('FOLDER_NAME','weband');
+  define('PORT_NUMBER','81');
+  define('DATABASE_NAME','weband');
+  define('DATABASE_USERNAME','root');
+  define('DATABASE_PASSWORD','');
+  define('DATABASE_HOST','localhost');
+
+  define('SITE_URL', 'http://localhost:'.PORT_NUMBER.'/'.FOLDER_NAME); // don't change it
+  define('THEME','/app/theme/version1/'); // don't change it
+  define('ASSETS','/'.FOLDER_NAME.'/app/theme/version1/'); // don't change it
 }
 else {
-define('ADMIN_MOBILE','#');
-define('SITE_URL', 'http://yourwebsite.com');
-define('THEME','/app/theme/version1/');
-define('ASSETS','../app/theme/version1/');
+
+  // change this variables due to the DOMAIN , HOST or SERVER and DATABASE info
+  define('ADMIN_MOBILE','#');
+  define('SITE_URL', 'http://yourwebsite.com');
+  define('DATABASE_NAME','weband');
+  define('DATABASE_USERNAME','root');
+  define('DATABASE_PASSWORD','');
+  define('DATABASE_HOST','localhost');
+
+  define('THEME','/app/theme/version1/'); // don't change it
+  define('ASSETS','../app/theme/version1/'); // don't change it
 }
+
 date_default_timezone_set('Asia/Tehran');
 
 include_once __DIR__.'/jdf.php';
@@ -203,10 +222,10 @@ function rn() {
 
 class Database 
 {
-	private static $dbName = 'weband' ; 
-	private static $dbHost = 'localhost' ;
-	private static $dbUsername = 'root';
-	private static $dbUserPassword = '';
+	private static $dbName = DATABASE_NAME;
+	private static $dbHost = DATABASE_HOST;
+	private static $dbUsername = DATABASE_USERNAME;
+	private static $dbUserPassword = DATABASE_PASSWORD;
 	private static $cont  = null;
 	
 	public function __construct() {
