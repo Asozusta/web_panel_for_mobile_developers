@@ -12,13 +12,13 @@ Think you want to create an application for blogging or advertisment or show pic
 You can see some images from project here :
 
 Dashboard Panel :
-![dashboard][http://s8.picofile.com/file/8338412318/dashboard.png]
+![dashboard](http://s8.picofile.com/file/8338412318/dashboard.png "Dashboard")
 
 Posts pages :
-![post_page][http://s9.picofile.com/file/8338412392/posts.png]
+![post_page](http://s9.picofile.com/file/8338412392/posts.png "POST")
 
 User management :
-![user][http://s9.picofile.com/file/8338412400/users.png]
+![user](http://s9.picofile.com/file/8338412400/users.png "USER")
 
 
 # How to use it :
